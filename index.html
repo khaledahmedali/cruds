@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> System Project</title>
+    <link rel="stylesheet" href="CSS/Cruds.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+             <h2>cruds</h2>
+            <p>priduct management system</p>
+        </div>
+        <div class="inputs">
+           <input type="text" placeholder="text" id="title">
+            <div class="price">
+                  <input onkeyup=" getTotal()" type="number" id="price" placeholder="price">
+                  <input onkeyup=" getTotal()" type="number" id="taxes" placeholder="taxes">
+                  <input onkeyup=" getTotal()" type="number" id="ads" placeholder="ads">
+                  <input onkeyup=" getTotal()" type="number" id="discount" placeholder="discount">
+                  <small id="total">43232</small>
+            </div>
+            <input placeholder="count" type="number" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="sudmit">create</button>
+        </div>  
+        <div class="outputs">
+          <div class="searchBlock">
+            <input type="text" id="search" placeholder="search">
+            <div class="btnsearch">
+                <button id="searchTitle">Search BY Title</button>
+                <button id="searchcategory">Search BY category</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div id="deleteAll"></div>
+       <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+             <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+        
+               
+
+        </tbody>
+       </table>
+   
+    </div>
+    <script src="JS/Cruds.js"></script>
+</body>
+</html>
